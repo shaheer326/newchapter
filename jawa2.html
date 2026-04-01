@@ -1,0 +1,53 @@
+<html>
+
+    <head>
+
+
+    </head>
+
+    <body>
+        
+        <button onclick="sub(90,23)">subtraction</button>
+        <button onclick="add(90,23)">addition</button>
+        <button onclick="mul(90,23)">multiplication</button>
+        <button onclick="div(90,23)">division</button>
+
+        <button class="button" onclick="myfunction()">click me</button>
+
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+        <script>
+            
+            function greet(){
+                document.write("welcome")
+            }
+            greet()
+            function sub(a,b){
+                document.write(a-b)
+            }
+            function add(a,b){
+                document.write(a+b)
+            }
+            function mul(a,b){
+                document.write(a*b)
+            }
+            function div(a,b){
+                document.write(a/b)
+            }
+
+            var b = 5
+            function myfunction(){
+                var a = 4
+                document.getElementById("demo").innerHTML = b * a;
+            }
+            document.getElementById("demo1").innerHTML = b;
+            document.getElementById("demo2").innerHTML = a;
+
+        </script>
+
+        
+
+    </body>
+
+</html>
